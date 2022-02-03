@@ -7,3 +7,7 @@ Description!
 
 Watch my shiettt
 
+
+# Local dvlpmt
+
+1. Open index.html in your browser.
