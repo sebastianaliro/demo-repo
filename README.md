@@ -10,4 +10,4 @@ Watch my shiettt
 
 # Local dvlpmt
 
-1. Open index.html in your browser.
+1. Open index.html in your browser.asdad
