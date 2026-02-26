@@ -1,1 +1,441 @@
-<div>Helloooo</div>
+!doctype html>
+<html lang="es">
+<head>
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <meta name="theme-color" content="#0B1220" />
+  <title>Sebastian Valenzuela — Product Portfolio</title>
+  <meta name="description" content="Portfolio profesional de Sebastian Valenzuela: Product Owner / Business Analyst. Proyectos y experiencia en SOVOS." />
+
+  <!-- IMPORTANT: archivo CSS se llama style.css -->
+  <link rel="stylesheet" href="./style.css" />
+</head>
+
+<body>
+  <a class="skip" href="#contenido" data-i18n="skip">Saltar al contenido</a>
+
+  <header class="header" data-glass>
+    <div class="container header__inner">
+      <a class="logo" href="#inicio" aria-label="Inicio">
+        <span class="logo__mark" aria-hidden="true"></span>
+        <span class="logo__text">Sebastian</span>
+      </a>
+
+      <nav class="nav" id="nav" aria-label="Navegación principal">
+        <a href="#sobre" data-i18n="nav_about">Sobre mí</a>
+        <a href="#experiencia" data-i18n="nav_exp">Experiencia</a>
+        <a href="#proyectos" data-i18n="nav_proj">Proyectos</a>
+        <a href="#skills" data-i18n="nav_skills">Habilidades</a>
+        <a href="#contacto" data-i18n="nav_contact">Contacto</a>
+      </nav>
+
+      <div class="header__actions">
+        <a class="pillbtn" href="https://www.linkedin.com/in/sebastianvalenzuela95/" target="_blank" rel="noopener" aria-label="LinkedIn">LinkedIn</a>
+        <a class="pillbtn" href="https://drive.google.com/file/d/1eiIQe6GPjotwputE8uu9YzeXJgCkR4hM/view?usp=sharing" target="_blank" rel="noopener" data-i18n="download_cv">Descargar CV</a>
+
+        <button class="iconbtn" id="langBtn" type="button" aria-label="Cambiar idioma" title="Idioma">
+          <span class="lang">ES</span>
+        </button>
+
+        <button class="iconbtn" id="themeBtn" type="button" aria-label="Cambiar tema" title="Tema">
+          <svg viewBox="0 0 24 24" aria-hidden="true"><path d="M12 18a6 6 0 1 0 0-12 6 6 0 0 0 0 12Zm0 4a1 1 0 0 1-1-1v-1.2a1 1 0 1 1 2 0V21a1 1 0 0 1-1 1ZM12 3.2a1 1 0 0 1-1-1V1a1 1 0 1 1 2 0v1.2a1 1 0 0 1-1 1ZM4.22 5.64a1 1 0 0 1-1.41 0L1.96 4.79a1 1 0 1 1 1.41-1.41l.85.85a1 1 0 0 1 0 1.41Zm17.82 0a1 1 0 0 1 0-1.41l.85-.85a1 1 0 1 1 1.41 1.41l-.85.85a1 1 0 0 1-1.41 0ZM3.2 13H2a1 1 0 1 1 0-2h1.2a1 1 0 1 1 0 2Zm20.8 0H22.8a1 1 0 1 1 0-2H24a1 1 0 1 1 0 2ZM4.22 22.04a1 1 0 0 1 0-1.41l.85-.85a1 1 0 1 1 1.41 1.41l-.85.85a1 1 0 0 1-1.41 0Zm15.56 0a1 1 0 0 1-1.41 0l-.85-.85a1 1 0 1 1 1.41-1.41l.85.85a1 1 0 0 1 0 1.41Z"/></svg>
+        </button>
+
+        <button class="iconbtn burger" id="menuBtn" type="button" aria-label="Abrir menú" aria-expanded="false" aria-controls="nav">
+          <span></span><span></span><span></span>
+        </button>
+      </div>
+    </div>
+  </header>
+
+  <main id="contenido">
+    <section id="inicio" class="hero">
+      <div class="container hero__grid">
+        <div class="hero__copy">
+          <p class="badge" data-i18n="headline">Senior Product Manager · Product Owner · Business Analyst</p>
+          <h1>Sebastian Valenzuela</h1>
+
+          <p class="lead lang lang--es">
+            Gestión end‑to‑end de productos digitales: discovery, priorización, ejecución y medición de resultados.
+            Enfoque en roadmaps, stakeholders, backlog ownership y KPIs alineados al valor de negocio.
+          </p>
+          <p class="lead lang lang--en">
+            End‑to‑end digital product management: discovery, prioritization, delivery, and outcome measurement.
+            Focused on roadmaps, stakeholder management, backlog ownership, and KPIs aligned to business value.
+          </p>
+
+          <div class="hero__cta">
+            <a class="btn" href="#proyectos" data-i18n="cta_projects">Ver proyectos</a>
+            <a class="btn btn--ghost" href="#contacto" data-i18n="cta_contact">Contactar</a>
+          </div>
+
+          <div class="hero__facts" aria-label="Datos rápidos">
+            <div class="fact"><span class="fact__k" data-i18n="fact_location_k">Ubicación</span><span class="fact__v" data-i18n="fact_location_v">Buenos Aires, AR</span></div>
+            <div class="fact"><span class="fact__k" data-i18n="fact_lang_k">Idiomas</span><span class="fact__v" data-i18n="fact_lang_v">ES (nativo) · EN (avanzado) · PT (básico)</span></div>
+            <div class="fact"><span class="fact__k" data-i18n="fact_stack_k">Stack</span><span class="fact__v">Jira · Confluence · Figma · SQL · Power BI</span></div>
+          </div>
+        </div>
+
+        <aside class="profile" aria-label="Perfil">
+          <div class="profile__card" data-glass>
+            <img class="avatar" src="assets/profile_360.jpg" srcset="assets/profile_360.jpg 360w, assets/profile.jpg 900w" sizes="(max-width: 920px) 260px, 320px" width="360" height="360" alt="Foto de perfil" loading="lazy" />
+            <div class="profile__body">
+              <p class="profile__title" data-i18n="contact_title">Contacto</p>
+              <a class="profile__row" href="mailto:sebastianvalenzuela76@gmail.com">
+                <span class="muted">Email</span>
+                <span class="strong">sebastianvalenzuela76@gmail.com</span>
+              </a>
+              <a class="profile__row" href="tel:+5491138059398">
+                <span class="muted" data-i18n="phone">Tel</span>
+                <span class="strong">+54 9 11 3805 9398</span>
+              </a>
+              <div class="profile__mini">
+                <a class="mini" href="https://www.linkedin.com/in/sebastianvalenzuela95/" target="_blank" rel="noopener">LinkedIn</a>
+                <a class="mini" href="https://drive.google.com/file/d/1eiIQe6GPjotwputE8uu9YzeXJgCkR4hM/view?usp=sharing" target="_blank" rel="noopener" data-i18n="download_cv">Descargar CV</a>
+              </div>
+            </div>
+          </div>
+        </aside>
+      </div>
+
+      <div class="hero__bg" aria-hidden="true"></div>
+    </section>
+
+    <section id="sobre" class="section">
+      <div class="container">
+        <h2 class="lang lang--es">Sobre mí</h2>
+        <h2 class="lang lang--en">About</h2>
+
+        <p class="section__lead lang lang--es">
+          Product Owner / Business Analyst orientado a resultados, con experiencia coordinando equipos cross‑funcionales
+          para entregar mejoras de producto, optimizar procesos y habilitar nuevos mercados.
+        </p>
+        <p class="section__lead lang lang--en">
+          Results-driven Product Owner / Business Analyst with experience coordinating cross-functional teams
+          to deliver product improvements, optimize processes, and enable new markets.
+        </p>
+
+        <div class="highlights">
+          <div class="hl" data-glass>
+            <h3 class="lang lang--es">Product Leadership</h3>
+            <h3 class="lang lang--en">Product Leadership</h3>
+            <p class="lang lang--es">Definición de alcance, priorización y coordinación para entregar outcomes medibles.</p>
+            <p class="lang lang--en">Scope definition, prioritization, and coordination to deliver measurable outcomes.</p>
+          </div>
+          <div class="hl" data-glass>
+            <h3 class="lang lang--es">Delivery & Métricas</h3>
+            <h3 class="lang lang--en">Delivery & Metrics</h3>
+            <p class="lang lang--es">Seguimiento de KPIs, control de avance, riesgos y comunicación con stakeholders.</p>
+            <p class="lang lang--en">KPI tracking, delivery control, risk management, and stakeholder communication.</p>
+          </div>
+          <div class="hl" data-glass>
+            <h3 class="lang lang--es">Colaboración</h3>
+            <h3 class="lang lang--en">Collaboration</h3>
+            <p class="lang lang--es">Trabajo fluido con Engineering, UX y áreas de negocio para alinear visión y ejecución.</p>
+            <p class="lang lang--en">Strong collaboration with Engineering, UX, and business teams to align vision and execution.</p>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <section id="experiencia" class="section section--alt">
+      <div class="container">
+        <div class="section__head">
+          <h2 class="lang lang--es">Experiencia</h2>
+          <h2 class="lang lang--en">Experience</h2>
+          <p class="muted">SOVOS · 2022 — Presente / Present</p>
+        </div>
+
+        <div class="timeline" data-glass>
+          <article class="titem">
+            <div class="titem__when">2022 — Presente</div>
+            <div class="titem__body">
+              <h3 class="lang lang--es">Product Owner / Business Analyst</h3>
+              <h3 class="lang lang--en">Product Owner / Business Analyst</h3>
+              <ul class="lang lang--es">
+                <li>Ownership end‑to‑end del ciclo de producto: discovery, priorización, ejecución y medición de outcomes.</li>
+                <li>Definición y mantenimiento de roadmap; diseño de KPIs e iniciativas con equipos cross‑funcionales.</li>
+                <li>Gestión de requerimientos: elicitación, descomposición y documentación; user stories con acceptance criteria.</li>
+                <li>Coordinación de dependencias y comunicación proactiva con stakeholders senior.</li>
+              </ul>
+              <ul class="lang lang--en">
+                <li>End-to-end ownership across the product lifecycle: discovery, prioritization, delivery, and outcome measurement.</li>
+                <li>Defined and maintained roadmaps; designed KPIs and initiatives with cross-functional teams.</li>
+                <li>Requirements management: elicitation, decomposition, documentation; user stories with acceptance criteria.</li>
+                <li>Coordinated dependencies and proactively communicated with senior stakeholders.</li>
+              </ul>
+            </div>
+          </article>
+
+          <article class="titem">
+            <div class="titem__when">2022</div>
+            <div class="titem__body">
+              <h3 class="lang lang--es">Junior Product Analyst</h3>
+              <h3 class="lang lang--en">Junior Product Analyst</h3>
+              <ul class="lang lang--es">
+                <li>Apoyo en levantamiento de requerimientos y gestión de backlog para features de productos digitales.</li>
+                <li>Análisis de feedback y datos operacionales para informar decisiones de roadmap.</li>
+                <li>Colaboración con Engineering y UX para asegurar calidad de especificaciones.</li>
+              </ul>
+              <ul class="lang lang--en">
+                <li>Supported requirements gathering and backlog management for digital product features.</li>
+                <li>Analyzed user feedback and operational data to inform roadmap decisions.</li>
+                <li>Partnered with Engineering and UX to ensure high-quality specifications.</li>
+              </ul>
+            </div>
+          </article>
+        </div>
+      </div>
+    </section>
+
+    <section id="proyectos" class="section">
+      <div class="container">
+        <div class="section__head">
+          <h2 class="lang lang--es">Proyectos en SOVOS</h2>
+          <h2 class="lang lang--en">SOVOS Projects</h2>
+          <p class="section__lead lang lang--es">Proyectos destacados con métricas (impacto) y herramientas.</p>
+          <p class="section__lead lang lang--en">Selected projects with impact metrics and tools.</p>
+        </div>
+
+        <div class="cards">
+          <article class="card" data-glass>
+            <div class="card__top">
+              <h3 class="lang lang--es">Rebranding Autoriza + extracción de Clave Única</h3>
+              <h3 class="lang lang--en">Autoriza Rebranding + Unique Key Flow Update</h3>
+              <span class="tag">Product Leadership</span>
+            </div>
+
+            <div class="impact">
+              <div class="impact__item"><span class="impact__k" data-i18n="impact_sales">Ventas</span><span class="impact__v">+10%</span></div>
+              <div class="impact__item"><span class="impact__k" data-i18n="impact_claims">Reclamos</span><span class="impact__v">−45%</span></div>
+            </div>
+
+            <div class="card__grid">
+              <div>
+                <h4 class="lang lang--es">Objetivo</h4>
+                <h4 class="lang lang--en">Goal</h4>
+                <p class="lang lang--es">Rebranding completo de la plataforma de venta de certificados digitales y ajuste del proceso de activación (clave única).</p>
+                <p class="lang lang--en">Full rebranding of the digital certificate sales platform and changes to the activation flow (unique key).</p>
+
+                <h4 class="lang lang--es">Mi aporte</h4>
+                <h4 class="lang lang--en">My role</h4>
+                <p class="lang lang--es">Líder del proceso: definición de alcance, priorización, coordinación y seguimiento.</p>
+                <p class="lang lang--en">Led the initiative: scope definition, prioritization, coordination, and tracking.</p>
+              </div>
+              <div>
+                <h4 class="lang lang--es">Resultado</h4>
+                <h4 class="lang lang--en">Outcome</h4>
+                <ul class="lang lang--es">
+                  <li>Mejor adopción de la marca luego de los cambios.</li>
+                  <li>+10% ventas y 45% menos reclamos.</li>
+                </ul>
+                <ul class="lang lang--en">
+                  <li>Improved brand adoption after the rollout.</li>
+                  <li>+10% sales and 45% fewer customer complaints.</li>
+                </ul>
+
+                <h4 class="lang lang--es">Herramientas / Tech</h4>
+                <h4 class="lang lang--en">Tools / Tech</h4>
+                <ul class="pills">
+                  <li>React (dev team)</li>
+                  <li>Jira</li>
+                  <li>Confluence</li>
+                  <li>Figma</li>
+                </ul>
+              </div>
+            </div>
+          </article>
+
+          <article class="card" data-glass>
+            <div class="card__top">
+              <h3 class="lang lang--es">Nuevo módulo de ventas de certificados digitales (Perú)</h3>
+              <h3 class="lang lang--en">New Digital Certificate Sales Module (Peru)</h3>
+              <span class="tag">Market Launch</span>
+            </div>
+
+            <div class="impact">
+              <div class="impact__item"><span class="impact__k" data-i18n="impact_revenue">Ingresos</span><span class="impact__v">US$ 100,000 / año</span></div>
+              <div class="impact__item"><span class="impact__k" data-i18n="impact_market">Mercado</span><span class="impact__v" data-i18n="impact_new_market">Nuevo</span></div>
+            </div>
+
+            <div class="card__grid">
+              <div>
+                <h4 class="lang lang--es">Objetivo</h4>
+                <h4 class="lang lang--en">Goal</h4>
+                <p class="lang lang--es">Habilitar el proceso de venta, activación y descarga de certificados digitales en Perú.</p>
+                <p class="lang lang--en">Enable the end-to-end flow for selling, activating, and downloading digital certificates in Peru.</p>
+
+                <h4 class="lang lang--es">Mi aporte</h4>
+                <h4 class="lang lang--en">My role</h4>
+                <p class="lang lang--es">Líder del proceso: definición del flujo, coordinación del delivery y seguimiento de hitos.</p>
+                <p class="lang lang--en">Led the initiative: flow definition, delivery coordination, and milestone tracking.</p>
+              </div>
+              <div>
+                <h4 class="lang lang--es">Resultado</h4>
+                <h4 class="lang lang--en">Outcome</h4>
+                <ul class="lang lang--es">
+                  <li>Nueva línea de negocio con ingresos anuales de ~US$100,000 para la compañía.</li>
+                  <li>Ventas activas en un nuevo mercado.</li>
+                </ul>
+                <ul class="lang lang--en">
+                  <li>New revenue stream generating ~US$100,000 annually for the company.</li>
+                  <li>Active sales in a new market.</li>
+                </ul>
+
+                <h4 class="lang lang--es">Herramientas</h4>
+                <h4 class="lang lang--en">Tools</h4>
+                <ul class="pills">
+                  <li>Jira</li>
+                  <li>Confluence</li>
+                  <li>Figma</li>
+                </ul>
+              </div>
+            </div>
+          </article>
+        </div>
+      </div>
+    </section>
+
+    <section id="skills" class="section section--alt">
+      <div class="container">
+        <h2 class="lang lang--es">Habilidades</h2>
+        <h2 class="lang lang--en">Skills</h2>
+        <div class="cols">
+          <div class="panel" data-glass>
+            <h3 class="lang lang--es">Competencias</h3>
+            <h3 class="lang lang--en">Core</h3>
+            <ul class="clean lang lang--es">
+              <li>Roadmap ownership · KPI design · Product lifecycle</li>
+              <li>Requirements decomposition · Story points · Planning poker</li>
+              <li>Stakeholder management · Comunicación estructurada</li>
+              <li>Agile/Scrum facilitation · Velocity/Cycle time tracking</li>
+            </ul>
+            <ul class="clean lang lang--en">
+              <li>Roadmap ownership · KPI design · Product lifecycle</li>
+              <li>Requirements decomposition · Story points · Planning poker</li>
+              <li>Stakeholder management · Structured communication</li>
+              <li>Agile/Scrum facilitation · Velocity/Cycle time tracking</li>
+            </ul>
+          </div>
+
+          <div class="panel" data-glass>
+            <h3 class="lang lang--es">Herramientas</h3>
+            <h3 class="lang lang--en">Tools</h3>
+            <ul class="clean">
+              <li>Jira · Confluence · Figma</li>
+              <li>Power BI · SQL · Excel (intermedio)</li>
+              <li>Microsoft 365</li>
+              <li>Python (básico) · Java (básico)</li>
+            </ul>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <section id="contacto" class="section">
+      <div class="container">
+        <div class="section__head">
+          <h2 class="lang lang--es">Contacto</h2>
+          <h2 class="lang lang--en">Contact</h2>
+          <p class="section__lead lang lang--es">Podés escribirme por email o usar el formulario.</p>
+          <p class="section__lead lang lang--en">Feel free to email me or use the form.</p>
+        </div>
+
+        <div class="contact">
+          <div class="contact__card" data-glass>
+            <h3 class="lang lang--es">Hablemos</h3>
+            <h3 class="lang lang--en">Let's talk</h3>
+            <p class="muted lang lang--es">Disponible para conversar sobre oportunidades de Product / BA.</p>
+            <p class="muted lang lang--en">Open to discuss Product / BA opportunities.</p>
+
+            <div class="contact__actions">
+              <a class="btn" href="mailto:sebastianvalenzuela76@gmail.com" data-i18n="email_me">Enviar email</a>
+              <a class="btn btn--ghost" href="tel:+5491138059398" data-i18n="call_me">Llamar</a>
+              <a class="btn btn--ghost" href="https://www.linkedin.com/in/sebastianvalenzuela95/" target="_blank" rel="noopener">LinkedIn</a>
+            </div>
+            <div class="divider"></div>
+            <a class="mini" href="https://drive.google.com/file/d/1eiIQe6GPjotwputE8uu9YzeXJgCkR4hM/view?usp=sharing" target="_blank" rel="noopener" data-i18n="download_cv">Descargar CV</a>
+          </div>
+
+          <form class="form" id="contactForm" data-glass>
+  <label>
+    <span class="lang lang--es">Nombre</span>
+    <span class="lang lang--en">Name</span>
+    <input name="name" type="text" placeholder="" required data-i18n-ph="ph_name" />
+  </label>
+
+  <label>
+    <span>Email</span>
+    <input name="email" type="email" placeholder="" required data-i18n-ph="ph_email" />
+  </label>
+
+  <label class="full">
+    <span class="lang lang--es">Mensaje</span>
+    <span class="lang lang--en">Message</span>
+    <textarea name="message" rows="6" placeholder="" required data-i18n-ph="ph_message"></textarea>
+  </label>
+
+  <!-- Honeypot anti-spam (oculto). Bots lo rellenan; humanos no -->
+  <input name="website" type="text" autocomplete="off" tabindex="-1" style="display:none" />
+
+  <button class="btn" type="submit" data-i18n="send">Enviar</button>
+
+  <!-- Estado -->
+  <p id="formStatus" class="muted small" aria-live="polite"></p>
+
+  <!-- Podés borrar estas notas si ya no aplican -->
+  <p class="muted small lang lang--es">Envío directo (sin abrir tu cliente de correo).</p>
+  <p class="muted small lang lang--en">Direct submission (no email client popup).</p>
+</form>
+        </div>
+      </div>
+    </section>
+  </main>
+
+  <footer class="footer">
+    <div class="container footer__inner">
+      <p>© <span id="year"></span> Sebastian Valenzuela</p>
+      <a class="mini" href="#inicio" data-i18n="back_top">Volver arriba</a>
+    </div>
+  </footer>
+
+  <script src="./script.js"></script>
+  <script>
+  const form = document.getElementById("contactForm");
+  const statusEl = document.getElementById("formStatus");
+
+  form.addEventListener("submit", async (e) => {
+    e.preventDefault();
+
+    statusEl.textContent = "Enviando…";
+
+    const payload = {
+      name: form.name.value.trim(),
+      email: form.email.value.trim(),
+      message: form.message.value.trim(),
+      website: (form.website?.value || "").trim(), // honeypot
+      locale: document.documentElement.lang || "es"
+    };
+
+    try {
+      const r = await fetch("/api/contact", {
+        method: "POST",
+        headers: { "Content-Type": "application/json" },
+        body: JSON.stringify(payload)
+      });
+
+      const data = await r.json().catch(() => ({}));
+
+      if (r.ok && data.ok) {
+        statusEl.textContent = "✅ ¡Listo! Te respondí a la brevedad.";
+        form.reset();
+      } else {
+        statusEl.textContent = "❌ No se pudo enviar: " + (data.error || "Error");
+      }
+    } catch (err) {
+      statusEl.textContent = "❌ Error de red. Probá de nuevo.";
+    }
+  });
+</script>
+</body>
+</html>
