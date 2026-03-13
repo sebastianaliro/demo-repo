@@ -357,36 +357,7 @@
             <a class="mini" href="https://drive.google.com/file/d/1eiIQe6GPjotwputE8uu9YzeXJgCkR4hM/view?usp=sharing" target="_blank" rel="noopener" data-i18n="download_cv">Descargar CV</a>
           </div>
 
-          <form class="form" id="contactForm" data-glass>
-  <label>
-    <span class="lang lang--es">Nombre</span>
-    <span class="lang lang--en">Name</span>
-    <input name="name" type="text" placeholder="" required data-i18n-ph="ph_name" />
-  </label>
-
-  <label>
-    <span>Email</span>
-    <input name="email" type="email" placeholder="" required data-i18n-ph="ph_email" />
-  </label>
-
-  <label class="full">
-    <span class="lang lang--es">Mensaje</span>
-    <span class="lang lang--en">Message</span>
-    <textarea name="message" rows="6" placeholder="" required data-i18n-ph="ph_message"></textarea>
-  </label>
-
-  <!-- Honeypot anti-spam (oculto). Bots lo rellenan; humanos no -->
-  <input name="website" type="text" autocomplete="off" tabindex="-1" style="display:none" />
-
-  <button class="btn" type="submit" data-i18n="send">Enviar</button>
-
-  <!-- Estado -->
-  <p id="formStatus" class="muted small" aria-live="polite"></p>
-
-  <!-- Podés borrar estas notas si ya no aplican -->
-  <p class="muted small lang lang--es">Envío directo (sin abrir tu cliente de correo).</p>
-  <p class="muted small lang lang--en">Direct submission (no email client popup).</p>
-</form>
+         
         </div>
       </div>
     </section>
@@ -400,42 +371,6 @@
   </footer>
 
   <script src="./script.js"></script>
-  <script>
-  const form = document.getElementById("contactForm");
-  const statusEl = document.getElementById("formStatus");
-
-  form.addEventListener("submit", async (e) => {
-    e.preventDefault();
-
-    statusEl.textContent = "Enviando…";
-
-    const payload = {
-      name: form.name.value.trim(),
-      email: form.email.value.trim(),
-      message: form.message.value.trim(),
-      website: (form.website?.value || "").trim(), // honeypot
-      locale: document.documentElement.lang || "es"
-    };
-
-    try {
-      const r = await fetch("/api/contact", {
-        method: "POST",
-        headers: { "Content-Type": "application/json" },
-        body: JSON.stringify(payload)
-      });
-
-      const data = await r.json().catch(() => ({}));
-
-      if (r.ok && data.ok) {
-        statusEl.textContent = "✅ ¡Listo! Te respondí a la brevedad.";
-        form.reset();
-      } else {
-        statusEl.textContent = "❌ No se pudo enviar: " + (data.error || "Error");
-      }
-    } catch (err) {
-      statusEl.textContent = "❌ Error de red. Probá de nuevo.";
-    }
-  });
-</script>
+ 
 </body>
 </html>
